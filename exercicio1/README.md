@@ -9,4 +9,6 @@ de execução no stdout e escrever o conteúdo final da diretoria num ficheiro d
 O programa do servidor deve chamar-se tecnicofs e receber obrigatoriamente os seguintes quatro argumentos
 de linha de comando.
 
-`./tecnicofs inputfile outputfile numthreads synchstrategy`
+```
+./tecnicofs inputfile outputfile numthreads synchstrategy
+```

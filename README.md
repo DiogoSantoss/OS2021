@@ -11,8 +11,8 @@ Para suportar acessos concorrentes e otimizar o desempenho, as funcionalidades d
 em paralelo, por um conjunto de tarefas escravas no processo servidor do FS.
 
 A API do TecnicoFS oferecerá as seguintes funções básicas:
-● Criar, pesquisar, remover e renomear ficheiro/diretoria
-● Abrir, ler, escrever e fechar ficheiro 
+- Criar, pesquisar, remover e renomear ficheiro/diretoria
+- Abrir, ler, escrever e fechar ficheiro 
 
 # Estado do TecnicoFS
 
@@ -25,11 +25,11 @@ normalmente se chamam os seus meta-dados) e que referencia o conteúdo da direto
 seja, os dados).
 
 Além da tabela de i-nodes, existe uma região de dados. Esta região mantém os dados de todos os
-ficheiros do FS, sendo esses dados referenciados a partir do i-node de cada ficheiro (na tabela de inodes). No caso de ficheiros normais, é na região de dados que é mantido o conteúdo do ficheiro (por
+ficheiros do FS, sendo esses dados referenciados a partir do i-node de cada ficheiro (na tabela de inodes). 
+No caso de ficheiros normais, é na região de dados que é mantido o conteúdo do ficheiro (por
 exemplo, a sequência de caracteres que compõe um ficheiro de texto). No caso de diretorias, a região
 de dados mantém a respetiva tabela, que representa o conjunto de ficheiros (ficheiros normais e subdiretorias) que existem nessa diretoria.
 
 Cada entrada na tabela de uma diretoria consiste num par (nome, i-number). O conjunto destes pares
 permite enumerar quais os nomes dos ficheiros incluídos numa diretoria, assim como aceder aos
-dados e meta-dados desses ficheiros (indexando a tabela de i-nodes pelo i-number do ficheiro
-pretendido). 
+dados e meta-dados desses ficheiros (indexando a tabela de i-nodes pelo i-number do ficheiro pretendido). 

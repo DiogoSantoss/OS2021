@@ -6,7 +6,9 @@ socket Unix do tipo datagram, através do qual recebe (e responde a) pedidos de 
 por outros processos, que designamos de processos cliente.
 
 O executável do TecnicoFS passa a receber os seguintes argumentos de linha de comandos:
-`tecnicofs numthreads nomesocket`
+```
+tecnicofs numthreads nomesocket
+```
 O novo argumento, nomesocket, indica o nome que deve ser associado ao socket pelo qual o servidor
 receberá pedidos de ligação. 
 
