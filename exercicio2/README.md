@@ -4,4 +4,6 @@ Este 2º exercício pretende estender a solução desenvolvida no 1º exercício
 
 Para testar o programa criou-se um script que recebe quatro argumentos
 
-`./runTests inputdir outputdir maxthreads`
+```
+./runTests inputdir outputdir maxthreads
+```
