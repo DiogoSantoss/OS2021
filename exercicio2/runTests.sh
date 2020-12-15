@@ -4,6 +4,8 @@ INPUTDIR=${1?Error: Invalid input directory}
 OUTPUTDIR=${2?Error: Invalid output directory}
 MAXTHREADS=${3?Error: Invalid threads number}
 
+#variables have double quotes "$VAR" to preserve spaces 
+
 # -d FILE -> FILE exists and is a directory
 if [ ! -d "$INPUTDIR" ]
 then
