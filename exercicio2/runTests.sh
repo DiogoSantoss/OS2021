@@ -20,6 +20,7 @@ then
     echo "Error: $MAXTHREADS is not a valid number of threads"
 
 else
+    #mkdir DIR -> creates new directory named DIR
     mkdir ${OUTPUTDIR}
     for FILEPATH in "$INPUTDIR"/*.txt
     do
